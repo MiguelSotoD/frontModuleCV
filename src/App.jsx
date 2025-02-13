@@ -1,10 +1,13 @@
-function App() {
+import Header from './components/ui/Header';
+import CVForm from './components/ui/CVForm';
 
+const App = () => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <h1>Hola React</h1>
+    <div className="min-h-screen">
+      <Header />
+      <CVForm />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
