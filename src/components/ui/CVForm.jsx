@@ -1,8 +1,10 @@
 import InputField from './InputField';
-
+import Header from './Header';
 const CVForm = () => {
 return (
+        
     <main>
+        <Header />
             <div className="flex justify-center items-center min-h-screen">
                     <div className="bg-white  rounded-lg shadow-md w-4/5 max-w-4xl">
                             <header className='justify-center items-center'>
