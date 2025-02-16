@@ -14,7 +14,7 @@ const App = () => {
       <div className="min-h-screen">
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/cvform" element={<CVForm />} />
+          <Route path="/principal" element={<CVForm />} />
           <Route path="/education" element={<EducationForm />} />
           <Route path="/work-experience" element={<WorkExperienceForm />} />
           <Route path="/skills" element={<SkillsForm />} />

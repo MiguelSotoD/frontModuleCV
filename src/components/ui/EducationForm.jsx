@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import InputField from './InputField';
+import InputFieldShort from './InputFieldShort';
 import Header from './Header';
 
 const EducationForm = () => {
@@ -20,8 +21,8 @@ const EducationForm = () => {
             <InputField label="Tipo" id="tipo" />
             <InputField label="Carrera" id="carrera" />
             <InputField label="Institución" id="institucion" />
-            <InputField label="Fecha de Ingreso" id="fecha-ingreso" type="date" />
-            <InputField label="Fecha de Egreso" id="fecha-egreso" type="date" />
+            <InputFieldShort label="Fecha de Ingreso" id="fecha-ingreso" type="date" />
+            <InputFieldShort label="Fecha de Egreso" id="fecha-egreso" type="date" />
             <InputField label="Anotaciones" id="anotaciones" />
           </div>
           <div className="flex justify-between mt-5">

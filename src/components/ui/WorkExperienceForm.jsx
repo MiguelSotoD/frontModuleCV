@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import InputField from './InputField';
+import InputFieldShort from './InputFieldShort';
 import Header from './Header';
 
 const WorkExperienceForm = () => {
@@ -18,8 +19,8 @@ const WorkExperienceForm = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2">
             <InputField label="Empresa" id="empresa" />
             <InputField label="Cargo" id="cargo" />
-            <InputField label="Fecha de Inicio" id="fecha-inicio" type="date" />
-            <InputField label="Fecha de Finalización" id="fecha-finalizacion" type="date" />
+            <InputFieldShort label="Fecha de Inicio" id="fecha-inicio" type="date" />
+            <InputFieldShort label="Fecha de Finalización" id="fecha-finalizacion" type="date" />
             <InputField label="Referencia" id="referencia" />
             <InputField label="Anotaciones" id="anotaciones" />
             <InputField label="Actual" id="actual" />
