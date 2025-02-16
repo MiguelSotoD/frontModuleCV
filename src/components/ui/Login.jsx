@@ -10,7 +10,7 @@ const Login = () => {
                 <form>
                     <div className="mb-6">
                         <label htmlFor="email" className="block text-sm font-semibold mb-2">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" className="p-2 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-green" />
+                        <input type="email" id="email" name="email" className="p-2 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-1 focus:ring-green" />
                     </div>
                     <div className="mb-10">
                         <label htmlFor="password" className="block text-sm font-semibold mb-2">Contraseña</label>
