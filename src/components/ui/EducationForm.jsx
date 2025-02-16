@@ -28,7 +28,7 @@ const EducationForm = () => {
           <div className="flex justify-between mt-5">
             <button
               className="bg-gray-500 text-white px-4 py-1.5 rounded-lg hover:bg-gray-700 cursor-pointer"
-              onClick={() => navigate('/cvform')}
+              onClick={() => navigate('/principal')}
             >
               Regresar
             </button>

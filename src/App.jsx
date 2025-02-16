@@ -7,20 +7,21 @@ import CertificationsForm from './components/ui/CertificationsForm';
 import AchievementsForm from './components/ui/AchievementsForm';
 import LanguagesForm from './components/ui/LanguagesForm';
 import Login from './components/ui/Login';
+import ProtectedRoute from './components/ProtectedRoute';
 
 const App = () => {
   return (
     <Router>
       <div className="min-h-screen">
         <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/principal" element={<CVForm />} />
-          <Route path="/education" element={<EducationForm />} />
-          <Route path="/work-experience" element={<WorkExperienceForm />} />
-          <Route path="/skills" element={<SkillsForm />} />
-          <Route path="/certifications" element={<CertificationsForm />} />
-          <Route path="/achievements" element={<AchievementsForm />} />
-          <Route path="/languages" element={<LanguagesForm />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<ProtectedRoute><CVForm /></ProtectedRoute>} />
+          <Route path="/education" element={<ProtectedRoute><EducationForm /></ProtectedRoute>} />
+          <Route path="/work-experience" element={<ProtectedRoute><WorkExperienceForm /></ProtectedRoute>} />
+          <Route path="/skills" element={<ProtectedRoute><SkillsForm /></ProtectedRoute>} />
+          <Route path="/certifications" element={<ProtectedRoute><CertificationsForm /></ProtectedRoute>} />
+          <Route path="/achievements" element={<ProtectedRoute><AchievementsForm /></ProtectedRoute>} />
+          <Route path="/languages" element={<ProtectedRoute><LanguagesForm /></ProtectedRoute>} />
         </Routes>
       </div>
     </Router>
